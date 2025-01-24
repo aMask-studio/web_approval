@@ -1,0 +1,33 @@
+.find-search-box{
+    display: inline-flex;
+    border:solid;
+    border-radius: 7px;
+    padding: 2px 10px 0px 10px;
+    border-color: #404040;
+    border-width: 1px;
+    align-items: center;
+    width: 100%;
+    
+    .find-text-box{
+        border: none;
+        outline:none;
+        width: 100%;
+
+        &:focus{
+            border: none;
+        }
+        // border-radius: 7px;
+        // padding: 2px 10px 0px 10px;
+        // border-color: #404040;
+        // border-width: 1px;
+    }
+    .search-icon {
+        width: 20px;
+        height: 20px;
+        margin-right: 10px;
+        order: -1;
+    }
+    .find-text-box:focus + .search-icon {
+        /* стили для иконки при фокусе поля */ 
+    }
+}

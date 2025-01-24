@@ -1,0 +1,186 @@
+@import '../colors';
+@import '../App.scss';
+
+.header{
+    background-color: $primary-color;
+    display: flex;
+    padding: 0px 30px 0px 30px;
+    justify-content: space-between;
+    
+    .navigation{
+        padding: 15px;
+        a{
+            @extend .subtitle;
+            padding: 15px;
+            color:white;
+            cursor: pointer;
+            transition-duration: 0.1s;
+            text-decoration: none;
+    
+            &:hover{
+                background-color: $primary-color-hover;
+                color: white;
+            }
+        }
+    }
+    .profile{
+        padding: 12px;
+        display: inline-flex;
+        align-items: center;
+        gap:15px;
+
+        a{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap:5px;
+            cursor: pointer;
+
+            &:hover{
+                border-bottom: 2px solid white;
+            }
+            span{
+                @extend .subtitle;
+                color: white;
+                margin-bottom: 2px;
+            }
+        }
+    }
+    @include for-phone-only{
+        padding: 0px;
+
+        .navigation{
+            display: flex;
+            flex-direction: column;
+            padding: 5px 5px 5px 0px;
+    
+            a{
+                font-size: 20px;
+                padding: 5px 10px 5px 10px;
+            }
+        }
+        .profile{
+            flex-direction: column;
+            text-align: end;
+            padding-right: 10px;
+            justify-content: flex-start;
+
+            a{
+                justify-content: end;
+            }
+        }
+    }
+}
+.page{
+    padding: 45px;
+    display: flex;
+    flex-direction: column;
+    min-height: 90vh;
+    gap: 10px;
+
+    @include for-phone-only{
+        padding: 20px;
+    }
+}
+.current-news-page{
+    img{
+        max-width: 40%;
+        margin: 10px 0px 15px 0px;
+    }
+    .description{
+        font-size: 20px;
+    }
+}
+.main-page{
+    .logo-img{
+        max-width: 50px;
+    }
+}
+.documents-page{
+    display: flex;
+    flex-direction: row;
+    max-height: 50vh;
+
+    .address-list{
+        border: 2px solid $secondary-color;
+        border-radius: 15px;
+        //max-width: 45%;
+
+        // min-width: 45%;
+        width: 50%;
+        .title{
+            background-color: $additional-color;
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
+            color: #fff;
+            padding: 15px;
+            font-size: 20px;
+            text-wrap: nowrap;
+        }
+        .list{
+            display: flex;
+            flex-direction: column;
+            padding: 15px;
+            gap: 10px;
+            height: 88%;
+            overflow-y: scroll;
+        }
+    }
+}
+.profile-page{
+    .name{
+
+    }
+}
+.problem-page{
+    .date-input{
+        padding: 10px;
+        border-radius: 7px;
+    }
+}
+.login-page{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.admin-page{
+    .news{
+        max-height: 400px;
+    }
+}
+.footer{
+    padding: 30px;
+    background-color: $primary-color;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+
+    .main{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        div{
+            width: 30%;
+
+            ul{
+                padding-left: 0px;
+                gap: 5px;
+                margin: 0px;
+
+                li{
+                    list-style-type: none;
+                    line-height: 1.8;
+                }
+            }
+        }
+    }
+    .second{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    a{
+        color: $secondary-color;
+    }
+}

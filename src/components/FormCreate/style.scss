@@ -1,0 +1,34 @@
+.form-create{
+    display: flex;
+    flex-direction: column;
+
+    label{
+        display: flex;
+        flex-direction: column;
+        font-weight: 600;
+        gap:5px;
+        font-weight: 22px;
+    }
+    button{
+        width: 100%;
+    }
+    .title-input{
+        border-radius: 7px;
+        border-color: #404040;
+        padding: 10px 10px 10px 10px;
+        border-width: 1px;
+    }
+    .description-input{
+        border-radius: 7px;
+        padding: 10px 10px 10px 10px;
+        border-color: #404040;
+        border-width: 1px;
+        aspect-ratio: 2/1;
+        height: 200px;
+        resize: vertical;
+    }
+    .date-input{
+        border-radius: 7px;
+        padding: 10px;
+    }
+}

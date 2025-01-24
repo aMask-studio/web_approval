@@ -1,0 +1,28 @@
+@import "../../colors";
+
+.button{
+    border-radius: 7px;
+    border: 1px solid white;
+    background-color: $additional-color;
+    padding: 15px 0px 15px 0px;
+    color: white;
+    font-weight: 600;
+
+    &:hover{
+        background-color: $additional-color-hover;
+    }
+}
+.button-red{
+    background-color: $accent-color;
+
+    &:hover{
+        background-color: $accent-color-hover;
+    }
+}
+.button-blue{
+    background-color: $primary-color;
+
+    &:hover{
+        background-color: $primary-color-hover;
+    }
+}

@@ -1,0 +1,56 @@
+@import '../../colors';
+@import '../../App.scss';
+
+.news-block{
+    border-radius: 7px;
+    display: flex;
+    aspect-ratio: 1 / 0.3;
+    align-items: start;
+    text-decoration: none;
+    flex-direction: column;
+    width: 32%;
+    //flex:49%;
+    //overflow: hidden;
+    cursor: pointer;
+    padding: 15px;
+    border: 2px solid black;
+
+    span{
+        font-size: 24px;
+        font-weight: 600;
+        color: rgb(67, 67, 67);
+    }
+    .title{
+        // font-size: 200%;
+        color: $primary-color;
+        // white-space: nowrap; /* Запрет переноса строки */
+        // overflow: hidden; /* Скрываем лишнее */
+        // text-overflow: ellipsis;
+
+        display: -webkit-box;
+        -webkit-line-clamp: 1; /* Максимальное количество строк */
+        line-clamp: 1;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    .description-text{
+        color: black;
+        width: 100%;
+        font-weight: 500;
+        font-size: 18px;
+    }
+
+    @include for-big-tablet-only(){
+        //flex-direction: column;
+        width: 48%;
+    }
+    @include for-phone-only(){
+        //flex-direction: column;
+        width: 100%;
+    }
+    @include for-tablet-only(){
+        //flex-direction: column;
+        width: 100%;
+    }
+}

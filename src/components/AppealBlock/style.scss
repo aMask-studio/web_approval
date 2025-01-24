@@ -1,0 +1,26 @@
+@import "../../colors";
+
+.appeal-block{
+    border: 2px solid $secondary-color;
+    border-radius: 7px;
+    border-left: 5px solid $accent-color;
+    padding: 15px;
+
+    .subtitle{
+        font-weight: 600;
+    }
+    .title-block{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .description-text{
+        cursor: pointer;
+        overflow-wrap: anywhere;
+        user-select: none;
+    }
+    .answer-input{
+        border-radius: 7px;
+        margin: 10px 0px 10px 0px;
+    }
+}

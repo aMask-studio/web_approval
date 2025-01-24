@@ -1,0 +1,23 @@
+@import '../../colors';
+@import '../../App.scss';
+
+.info-block{
+    border: 2px solid $secondary-color;
+    border-radius: 7px;
+    border-left: 5px solid $accent-color;
+    padding: 15px;
+}
+.info-block-50{
+    width: 50%;
+
+    @include for-phone-only{
+        width: 100%;
+    }
+}
+.info-block-100{
+    width: 100%;
+
+    @include for-phone-only{
+        width: 100%;
+    }
+}

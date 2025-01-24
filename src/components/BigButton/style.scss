@@ -1,0 +1,31 @@
+@import "../../colors";
+@import '../../App.scss';
+
+.big-button{
+    border-radius: 7px;
+    border: 2px solid $secondary-color;
+    padding: 30px;
+    color: $additional-color;
+    transition-duration: 0.5s;
+    text-decoration: none;
+    transition-timing-function: ease-in-out;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    //max-width: 16%;
+
+    //max-width: 197px;
+
+    &:hover{
+        transform: scale(1.05);
+    }
+    img{
+        width: 130px;
+    }
+    p{
+        font-size: 18px;
+        font-weight: 400;
+    }
+}

@@ -1,0 +1,27 @@
+@import "../../colors";
+@import '../../App.scss';
+
+.icon-info-button{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 15px;
+    padding: 15px 20px 15px 20px;
+    background-color: white;
+    cursor: default;
+    align-items: center;
+
+    border-radius: 7px;
+    border: 2px solid $secondary-color;
+
+    .title{
+        font-family: monospace;
+        color:$primary-color;
+        //width: 30px;
+        //text-align: center;
+    }
+
+    @include for-phone-only{
+        //width: 100%;
+    }
+}
